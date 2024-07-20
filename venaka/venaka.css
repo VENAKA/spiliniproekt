@@ -1,0 +1,615 @@
+*{ 
+    padding: 0; 
+    margin: 0; 
+    border: 0; 
+    text-decoration: none; 
+} 
+
+:focus,:active{outline: none;} 
+a:focus,a:active{outline: none;} 
+
+nav,footer,header,aside{display: block;} 
+
+:root{ 
+    --boss: rgb(160, 160, 160); 
+    --colors: rgb(210, 198, 198); 
+    --font-family: "Inter", sans-serif;
+    --second-family: "Roboto", sans-serif;
+}
+
+input,button,textarea{font-family:inherit;} 
+
+input::-ms-clear{display: none;} 
+button{cursor: pointer;} 
+button::-moz-focus-inner {padding:0;border:0;} 
+a, a:visited{text-decoration: none;} 
+a:hover{text-decoration: none;} 
+ul li{list-style: none;} 
+img{vertical-align: top;} 
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;} 
+
+html{ 
+    scroll-behavior: smooth; 
+}
+
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+.v-header{
+    background:linear-gradient(#000, #433e3e );
+    max-width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 150px 0 150px;
+    align-items: center;
+}
+.v-header__logo{
+    width: 200px;
+    height: 100px;
+}
+.v-header__ul{
+    width: 700px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.v-header__ul-li{
+    color: #ffffff;
+    font-size: 30px;
+    font-family: Oswald;
+    transition: 0.2s;
+}
+.v-header__ul-li_a{
+    color: #ffffff;
+    
+}
+.v-header__ul-li:hover{
+    scale: 1.1;
+}
+.v-header__input{
+    max-width: 150px;
+    height: 30px;
+    border: 1px solid #ffffff;
+    background-color: #fffbfb00;
+    border-radius: 50px;
+    z-index: 0;
+    color: #ffffff;
+    font-size: 20px;
+    font-family:Oswald ;
+    padding: 10px;
+    transition: 2s;
+}
+.v-header__body{
+    width: 100%;
+    height: 85.5vh;
+    background: linear-gradient( #433e3e, #000);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.v-card{
+    width: 500px;
+    height: 550px;
+    border: 5px solid #ffffff;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.703);
+    border-radius: 10px;
+}
+.v-card:nth-child(1){
+    position: relative;
+}
+.v-card:nth-child(2){
+    background-color: #383535da;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+.card__img{
+    position: absolute;
+    right: 250px;
+}
+.frame__info{
+    width: 200px;
+    height: 400px;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: Oswald;
+    border: 5px solid #ffffff;
+    position: absolute;
+    right: 10px;
+    padding: 10px;
+    border-radius: 5px ;
+    background-color: rgba(94, 84, 84, 0.342);
+}
+.v-card__title{
+    color: #ffffff;
+    font-size: 100px;
+    font-family:Oswald ;
+}
+.card__info{
+    color: #fffbfb;
+    font-family:Oswald ;
+    text-align: center;
+}
+.v-main{
+    max-width: 100%;
+}
+.v-main__gameplay{
+    max-width: 90%;
+    margin: 50px auto;
+}
+.v-gameplay__title{
+    text-align: center;
+    color: #ffffff;
+    font-size: 80px;
+    font-family: Oswald;
+    background-color: rgb(33, 31, 31);
+    border-radius: 5px;
+    margin: 10px auto;
+    transition: 0.8s;
+    cursor: pointer;
+}
+.v-gameplay__title:hover{
+    scale: 1.1;
+    background-color: #010101b7;
+    box-shadow: 0 0 20px;
+}
+
+.v-Tenno-Warframes{
+    margin: 50px auto;
+    max-width: 100%;
+    height: 400px;
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: #ffffff9d 20px 20px 8px;
+    transition: 2s;
+    position: relative;
+}
+
+.v-Tenno-Warframes__h{
+width: 5%;
+color: #ffffff;
+font-size: 50px;
+font-family: Oswald;
+background-color: rgba(35, 36, 36, 0.909);
+padding: 3px;
+text-align: center;
+}
+.v-Tenno-Warframes__img{
+    width: 40%;
+    height: 99%;
+    background-color: #000;
+    animation: Tenno-Warframes alternate 12s infinite ;
+    background-size: cover;
+    border: 3px solid #ffffff;
+
+}
+.v-combat__h{
+    width: 5%;
+    color: #ffffff;
+    font-size: 44px;
+    font-family: Oswald;
+    background-color: rgba(35, 36, 36, 0.909);
+    padding: 3px;
+    text-align: center;
+    }
+.v-combat__img{
+    width: 40%;
+    height: 99%;
+    background-color: #000;
+    background-size: cover;
+    border: 3px solid #ffffff;
+    animation: Combat alternate 13s infinite ;
+}
+@keyframes Tenno-Warframes{
+    0%{
+        background-image: url(./vanakaimg/233d765f4b91e32058738086bd48b44d0.jpg);
+    }
+    33%{
+        background-image: url(./vanakaimg/DAVKPifRJC1SZTRZ25FedQ.png);
+    }
+    100%{
+        background-image: url(./vanakaimg/jade_chorus_pack_2_4k_f4230230-fa73-4fe0-bd5e-86f89453d0f4.jpg);
+    }
+}
+.v-Tenno-Warframes__info{
+    color: #ffffff;
+    font-family: Oswald;
+    font-size: 40px;
+    width: 60%;
+    height: 99%;
+    background-color: rgba(35, 36, 36, 0.909);
+    padding: 3px;
+}
+.v-combat__info{
+        color: #ffffff;
+        font-family: Oswald;
+        font-size: 20px;
+        width: 60%;
+        height: 99%;
+        background-color: rgba(35, 36, 36, 0.909);
+        padding: 3px;
+}
+
+@keyframes Combat{
+    0%{
+        background-image: url(./vanakaimg/Warframe-Gara.avif);
+    }
+    33%{
+        background-image: url(./vanakaimg/warframe-switch.jpg);
+    }
+    100%{
+        background-image: url(./vanakaimg/Warframe-Angels-of-the-Zariman-Combat.avif);
+    }
+}
+
+.v-Parkour{
+    margin: 50px auto;
+    max-width: 100%;
+    height: 400px;
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: #ffffff9d 20px 20px 8px;
+    transition: 2s;
+    cursor: pointer;
+}
+
+
+.v-Parkour__h{
+    width: 5%;
+    color: #ffffff;
+    font-size: 38px;
+    font-family: Oswald;
+    background-color: rgba(35, 36, 36, 0.909);
+    padding: 3px;
+    text-align: center;
+}
+.v-Parkour__img{
+    width: 40%;
+    height: 99%;
+    background-color: #000;
+    animation: Parkour alternate 13s infinite ;
+    background-size: cover;
+    border: 3px solid #ffffff;
+}
+@keyframes Parkour{
+    0%{
+        background-image:url(./vanakaimg/Warframe-Excalibur-Performing-Bullet-Jump.avif);
+    }
+    33%{
+        background-image: url(./vanakaimg/qs-parkour.jpg);
+    }
+    100%{
+        background-image: url(./vanakaimg/warframe-ps4_15ke.jpg);
+    }
+}
+.v-Parkour__info{
+    color: #ffffff;
+    font-size: 23px;
+    font-family: Oswald;
+    width: 60%;
+    height: 99%;
+    background-color: rgba(35, 36, 36, 0.909);
+    padding: 2px;
+}
+.v-Missions{
+    margin: 50px auto;
+    max-width: 100%;
+    height: 400px;
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: #ffffff9d -20px 20px 8px;
+    transition: 2s;
+    cursor: pointer;
+}
+
+.v-Missions__info{
+    color: #ffffff;
+    font-size: 30px;
+    font-family: Oswald;
+    width: 60%;
+    height: 99%;
+    background-color: rgba(35, 36, 36, 0.909);
+    padding: 2px;
+}
+.v-Missions__img{
+    width: 40%;
+    height: 99%;
+    background-color: #000;
+    animation: Mision alternate 11s infinite ;
+    background-size: cover;
+    border: 3px solid #ffffff;
+}
+@keyframes Mision{
+    0%{
+        background-image: url(./vanakaimg/1618463493_6687.jpeg);
+    }
+    33%{
+        background-image: url(./vanakaimg/1618463493_6687.jpeg);
+    }
+    100%{
+        background-image: url(./vanakaimg/eq1c18bsucv91.webp);
+    }
+}
+.v-Missions__h{
+    width: 5%;
+    color: #ffffff;
+    font-size: 32px;
+    font-family: Oswald;
+    background-color: rgba(35, 36, 36, 0.909);
+    padding: 3px;
+    text-align: center;
+}
+.v-Multiplayer{
+    margin: 50px auto;
+    max-width: 100%;
+    height: 400px;
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: #ffffff9d 20px 20px 8px;
+    transition: 2s;
+    cursor: pointer;
+}
+
+.v-Multiplayer__h{
+    width: 5%;
+    color: #ffffff;
+    font-size: 24px;
+    font-family: Oswald;
+    background-color: rgba(35, 36, 36, 0.909);
+    padding: 3px;
+    text-align: center;
+}
+.v-Multiplayer__img{
+    width: 40%;
+    height: 99%;
+    background-color: #000;
+    animation: Multiplayer alternate 14s infinite ;
+    background-size: cover;
+    border: 3px solid #ffffff;
+}
+@keyframes Multiplayer{
+    0%{
+        background-image: url(./vanakaimg/1390497786_warframe.jpg);
+    }
+    33%{
+        background-image: url(./vanakaimg/ef095d9dce31933efd7390ed3bdc21a8_1600x900.png);
+    }
+    100%{
+        background-image: url(./vanakaimg/warframe_crossplay_crosssave.webp);
+    }
+}
+.v-Multiplayer__info{
+    color: #ffffff;
+    font-size: 28px;
+    font-family: Oswald;
+    width: 60%;
+    height: 99%;
+    background-color: rgba(35, 36, 36, 0.909);
+    padding: 2px;
+}
+
+.v-main__Factions{
+    width: 99.9%;
+    height: 1000px;
+    overflow: hidden;
+}
+.slider {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    height: 100%;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    color: #ffffff;
+    min-width: 100%;
+    box-sizing: border-box;
+    height: 800px;
+}
+
+.controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.control-left, .control-right {
+    background: rgba(31, 30, 30, 0);
+    color: white;
+    border: none;
+    padding: 50px;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+}
+.slide__header{
+    width: 100%;
+    height: 100px;
+    background-color: #47454532;
+}
+.img-slide{
+    width: 100%;
+    height: 100%;
+}
+.slide:nth-child(1){
+    background-image: url(./vanakaimg/Grineer.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide:nth-child(2){
+    background-image: url(./vanakaimg/завантаження.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide:nth-child(3){
+    background-image: url(./vanakaimg/FactionsInfested.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide:nth-child(4){
+    background-image: url(./vanakaimg/ddxk8pj-75324358-764d-48c0-bf15-35f8dd8242af.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.v-main__Factions-h{
+    color: #ffffff;
+    font-size: 60px;
+    background-color: #222020;
+    padding: 10px;
+    text-align: center;
+    font-family: Oswald;
+    width: 90%;
+    border-radius: 5px;
+    margin: 50px auto;
+}
+.slide__header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.slide__header__h{
+    color: #ffffff;
+    font-size: 50px;
+    font-family: Oswald;
+}
+.slide__info{
+    color: #ffffff;
+    font-size: 28px;
+    text-align: left;
+    font-family: Oswald;
+}
+
+.fa-xmark{
+    color: #ffffff;
+}
+.close{
+    background-color: #700000;
+    
+}
+.v-Tenno-Warframes_modal.newmod{
+    display: block;
+}
+.modal{
+    width: 50px;
+    height: 100%;
+    background-color: #313131;
+    color: #ffffff;
+    font-size: 30px;
+    font-family:Oswald ;
+    border: 2px solid #ffffff;
+}
+.v-Tenno-Warframes_modal{
+    width: 1500px;
+    height: 95vh;
+    border: 1px solid #000;
+    position: absolute;
+    z-index: 1;
+    background-color: #222020;
+    right: -70px;
+    display: none;
+    bottom: -100px;
+    border-radius: 5px;
+}
+.img-slide{
+    object-fit: cover;
+}
+.fa-caret-left{
+    position: absolute;
+    font-size: 100px;
+    color: #c0bcbc81;
+    left: 50px;
+}
+.fa-caret-right{
+    font-size: 100px;
+    color: #c0bcbc81;
+    position: absolute;
+    right: 50px;
+}
+
+.main__cards {
+    max-width: 90%;
+    height: 600px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    width: 400px;
+    height: 600px;
+    border-radius: 50px;
+    border: 1px solid #ffffff;
+    background:linear-gradient( #070707 ,#1a1818) ;
+    transition: 1s;
+    cursor: pointer;
+}
+.card:hover{
+    scale: 1.08;
+    background: linear-gradient( #212121 ,#171515);
+}
+.card__h {
+    width: 100%;
+    height: 50px;
+    color: #ffffff;
+    font-size: 35px;
+    text-align: center;
+    font-family: Oswald;
+    background-color: #ffffff06;
+    border-radius: 50px 50px 0 0 ;
+}
+.card__main {
+    width: 100%;
+}
+.card__main-price {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    color: #ffffff;
+    font-family: Oswald;
+    font-size: 100px;
+    margin-top: 150px;
+}
+.card__main-info {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    color: #ffffff;
+    font-family: Oswald;
+    font-size: 45px;
+}
+.donations {
+    width: 90%;
+    height: 100px;
+    font-size: 70px;
+    counter-reset: #fff;
+    margin: 100px auto;
+    color: #fff;
+    font-family: Oswald;
+    background-color: #171717;
+    text-align: center;
+    border-radius: 5px;
+}
