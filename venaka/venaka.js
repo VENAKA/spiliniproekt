@@ -39,10 +39,10 @@ let modalTento = document.querySelector('.v-Tenno-Warframes_modal');
             modalTento.classList.toggle('newmod');
         });
     });
-
+let cards = document.querySelector('.main__cards')
 let card = document.querySelectorAll('.card')
 
-document.addEventListener('click',function(){
+cards.addEventListener('click',function(){
     cardValue = card.value
     if(cardValue === cardValue){
         window.location.href = 'https://www.warframe.com/uk/buyplatinum'
