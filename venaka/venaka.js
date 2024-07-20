@@ -49,32 +49,7 @@ document.addEventListener('click',function(){
     }
 })
 
-let headerGoHome = document.getElementById('Hom')
 
-document.addEventListener('click',function(){
-    headerGoHomeValue = headerGoHome.value
-    if(headerGoHomeValue === headerGoHomeValue){
-        window.location.href = '../'
-    }
-})
-
-let headerGoYarik = document.getElementById('Cel')
-
-document.addEventListener('click',function(){
-    headerGoYarikValue = headerGoYarik.value
-    if(headerGoYarikValue === headerGoYarikValue){
-        window.location.href = '../'
-    }
-})
-
-let headerGoGreg = document.getElementById('Hor')
-
-document.addEventListener('click',function(){
-    headerGoGregValue = headerGoGreg.value
-    if(headerGoGregValue === headerGoGregValue){
-        window.location.href = '../'
-    }
-})
 
 
 

@@ -612,4 +612,23 @@ text-align: center;
     background-color: #171717;
     text-align: center;
     border-radius: 5px;
+    transition: 1s;
 }
+
+
+.donations:hover{
+    scale: 1.1;
+    background-color: #010101b7;
+    box-shadow: 0 0 20px;
+}
+.v-main__Factions-h{
+    transition: 1s;
+}
+
+.v-main__Factions-h:hover{
+    scale: 1.09;
+    background-color: #010101b7;
+    box-shadow: 0 0 20px;
+}
+
+
