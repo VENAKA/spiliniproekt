@@ -42,11 +42,9 @@ let modalTento = document.querySelector('.v-Tenno-Warframes_modal');
 let cards = document.querySelector('.main__cards')
 let card = document.querySelectorAll('.card')
 
-cards.addEventListener('click',function(){
-    cardValue = card.value
-    if(cardValue === cardValue){
-        window.location.href = 'https://www.warframe.com/uk/buyplatinum'
-    }
+card.addEventListener('',function(){
+    let url = 'https://www.warframe.com/uk/buyplatinum'
+    window.location.href = url
 })
 
 
