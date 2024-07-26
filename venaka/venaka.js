@@ -1,8 +1,8 @@
 let currentSlide = 0;
 
 function showSlide(index) {
-    const slides = document.querySelector('.slides');
-    const totalSlides = document.querySelectorAll('.slide').length;
+    let slides = document.querySelector('.slides');
+    let totalSlides = document.querySelectorAll('.slide').length;
 
     if (index >= totalSlides) {
         currentSlide = 0;
@@ -12,7 +12,7 @@ function showSlide(index) {
         currentSlide = index;
     }
 
-    const offset = -currentSlide * 100;
+    let offset = -currentSlide * 100;
     slides.style.transform = `translateX(${offset}%)`;
 }
 
@@ -24,7 +24,7 @@ function prevSlide() {
     showSlide(currentSlide - 1);
 }
 
-setInterval(nextSlide, 10000);
+setInterval(nextSlide, 100000);
 
 
 let btn = document.querySelectorAll('.modal')
@@ -39,13 +39,8 @@ let modalTento = document.querySelector('.v-Tenno-Warframes_modal');
             modalTento.classList.toggle('newmod');
         });
     });
-let cards = document.querySelector('.main__cards')
-let card = document.querySelectorAll('.card')
 
-card.addEventListener('',function(){
-    let url = 'https://www.warframe.com/uk/buyplatinum'
-    window.location.href = url
-})
+
 
 
 
