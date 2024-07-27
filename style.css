@@ -34,7 +34,8 @@ html{
 }
 
 body{
-    background: url(./IMG/2151151043.jpg);
+    /* background: url(./IMG/2151151043.jpg); */
+    background: linear-gradient(rgb(0, 0, 0), rgb(46, 46, 46));;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -217,4 +218,86 @@ body{
 
 .Horizon_link:hover{
     border: 1px solid #c205fb;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.y-gifbanner {
+    margin: auto;
+    background-image: url(https://64.media.tumblr.com/dd449ca75db3f3408ce0a2cc66b3551e/8c642a44ad29f4ea-52/s540x810/a1b56b9bbfea7b68cd94e1b63354e54cb4279f4e.gifv);
+    background-position-y: 400px;
+    background-size: 1200px;
+    width: 1200px;
+    height: 200px;
+}
+.y-gradient__banner {
+    margin: auto;
+    position: relative;
+    margin-top: -100px;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0));
+    height: 100px;
+    width: 1200px;
+}
+.y-store__cont {
+    margin: auto;
+    background-color: black;
+    width: 1200px;
+    height: 300px;
+}
+.y-banner__text {
+    text-align: center;
+    padding-top: 70px;
+    font-size: 50px;
+    font-family: "Tiny5", sans-serif;
+    color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+}
+.y-banner__span {
+    color: #f6aa26;
+}
+.y-banner__button {
+    text-decoration: none;
+    font-family: "Tiny5", sans-serif;
+    color: rgb(255, 255, 255);
+
+    font-size: 20px;
+    border-top: 8px solid #f9cb7a;
+    border-bottom: 8px solid #ae791e;
+    background-color: #f6aa26;
+    margin: auto;
+    text-align: center;
+    width: 200px;
+    padding: 20px;
+}
+.y-banner__button:hover {
+    border-top: 8px solid #fbd28c;
+    border-bottom: 8px solid #ac7f31;
+    background-color: #f2b244;
 }
