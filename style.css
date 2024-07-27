@@ -32,10 +32,47 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 html{ 
     scroll-behavior: smooth; 
 }
-.header{
-    background-color: #000;
+
+
+
+.roboto-mono-<uniquifier> {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
 
-.greg{
-    color: #000;
+.header {
+    max-width: 100%;
+    height: 100px;
+    background-color: rgba(50, 43, 43, 0.852);
+    display: flex;
+    justify-content: space-around;
+}
+
+.find__it {
+}
+.header__body {
+}
+.header__body-con {
+}
+.logo-go-it {
+}
+.header__body-con_h {
+}
+.header__body-con_p {
+}
+.header__body-con-guys {
+}
+.img__con {
+}
+.my__git {
+}
+.main {
+}
+.coloborators-con {
+}
+.footer {
+}
+.footer__con {
 }
