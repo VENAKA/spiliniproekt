@@ -1,4 +1,3 @@
-
 let yPlayer = document.querySelector('.y-player');
 let straw = document.querySelector('.strawberry')
 let winEkan = document.querySelector('.y-win')
@@ -63,8 +62,8 @@ function StopPlayer() {
     }
 }
 function resetPlayer() {
-    position = 120; // Возвращаем начальную позицию по оси X
-    positionY = 547; // Начальная позиция по оси Y
+    position = 120; 
+    positionY = 547; 
     yPlayer.style.left = position + 'px';
     yPlayer.style.top = positionY + 'px';
     scoreR = 0;
@@ -179,4 +178,6 @@ document.addEventListener('keydown', (event) => {
         scoreR = 0;
     }
 });
+
+
 
