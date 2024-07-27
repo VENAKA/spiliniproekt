@@ -88,6 +88,7 @@ let burgers = document.querySelector('.v-header__burger');
 burgers.forEach(burger => {
     burger.addEventListener('click', function() {
         burgerModal.classList.toggle('newmodal');
+        console.log(123)
     });
 });
 
