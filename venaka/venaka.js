@@ -83,11 +83,12 @@ searchInput.addEventListener('keydown', function(event){
 
 
 let burgerModal = document.querySelector('.v-header__burger-modal');
-let burgers = document.querySelectorAll('.v-header__burger');
+let burgers = document.querySelector('.v-header__burger');
 
 burgers.forEach(burger => {
     burger.addEventListener('click', function() {
         burgerModal.classList.toggle('newmodal');
+        console.log(123)
     });
 });
 
