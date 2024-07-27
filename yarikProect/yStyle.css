@@ -366,7 +366,7 @@ a {
     display: flex;
 }
 .y-news {
-    background-image: url(/img/celesteLogo3.jpg);
+    background-image: url(https://3.bp.blogspot.com/-OP-uhfGYg8g/XAgUcqHT3zI/AAAAAAAAFEU/XKedKcvHtUcQ6KHV3cTeA3vG_Lt0_P94ACLcBGAs/w1200-h630-p-k-no-nu/celeste.jpg);
     background-size: 500px;
 
     margin: auto;
@@ -387,33 +387,34 @@ a {
 }
 .y-news:nth-child(2) {
     background-position-x: -100px;
-    background-image: url(/img/clesteNews2.jpg);
+    background-image: url(https://cdn1.epicgames.com/b671fbc7be424e888c9346a9a6d3d9db/offer/Celeste%20-%20landscape%20offer%20image-2560x1440-0b9b94fd493d817704ecfdf4c704989a.jpg);
 }
 .y-news:nth-child(3) {
-    background-position-x: -100px;
-    background-image: url(/img/celesteNews3.jpg);
+    background-position-x: 0px;
+    background-position-y: -30px;
+    background-image: url(https://wallpapercave.com/wp/wp4162304.jpg);
 }
 .y-news:nth-child(4) {
     background-position-x: -100px;
     background-position-y: 300px;
-    background-image: url(/img/celesteNews4.png);
+    background-image: url(https://i.pinimg.com/originals/91/fb/54/91fb54881f5e059bc1e7bd1c41a5aeb9.png);
 }
 .y-news:nth-child(5) {
     background-position-x: -50px;
-    background-image: url(/img/celesteNews5.jpg);
+    background-image: url(https://wallpapercave.com/wp/wp4162278.jpg);
 }
 .y-news:nth-child(6) {
     background-position-x: -100px;
-    background-image: url(/img/celesteNews6.png);
+    background-image: url(https://images.gamebanana.com/img/ss/mods/62ef81482c6f4.jpg);
 }
 .y-news:nth-child(7) {
     background-position-x: -100px;
-    background-image: url(/img//celesteLogo3.jpg);
+    background-image: url(https://3.bp.blogspot.com/-OP-uhfGYg8g/XAgUcqHT3zI/AAAAAAAAFEU/XKedKcvHtUcQ6KHV3cTeA3vG_Lt0_P94ACLcBGAs/w1200-h630-p-k-no-nu/celeste.jpg);
 }
 .y-news:nth-child(8) {
     background-position-x: -100px;
     background-position-y: 450px;
-    background-image: url(/img/celesteNews8.png);
+    background-image: url(https://preview.redd.it/strawberry-jam-collab-the-biggest-celeste-mod-ever-has-now-v0-beot5v4gfsia1.png?width=640&crop=smart&auto=webp&s=52991ad8bda6d47940190123b5d227c19126f6ab);
 }
 .y-news__inside {
     display: flex;
