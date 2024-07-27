@@ -301,3 +301,46 @@ body{
     border-bottom: 8px solid #ac7f31;
     background-color: #f2b244;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.warfa {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: #000000db;
+    align-items: center;
+    margin: 50px auto;
+}
+.warfa__h {
+    color: #ffffffe0;
+    font-size: 50px;
+}
+.warfa__info {
+    color: #ffffffe0;
+    font-size: 40px;
+}
+.go__site {
+    text-align: center;
+    background-color: #89bec4c4;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 20px;
+    width: 50px;
+}
