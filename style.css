@@ -128,11 +128,9 @@ body{
 
 .main_body-posters-box {
     max-width: 1600px;
-    border: 1px solid #0040ff;
 }
 
 .horizon_poster {
-    border: 1px solid #ff0000;
     overflow: hidden;
     max-width: 1500px;
     display: flex;
