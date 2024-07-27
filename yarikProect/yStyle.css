@@ -6,7 +6,12 @@
     list-style: none;
     box-sizing: border-box;
 }
-
+*::-webkit-scrollbar{
+    background-color: #000000;
+}
+*::-webkit-scrollbar-thumb{
+    background-color: #ffffff2b;
+}
 .y-body {
     background-color: rgb(0, 0, 0);
 
@@ -50,7 +55,7 @@
     height: 65px;
 }
 .y-menu {
-    width: 500px;
+    max-width: 500px;
     display: flex;
     justify-content: space-between;
 }
@@ -61,85 +66,11 @@
     cursor: pointer;
     /* margin-left: 55px; */
     transition: 0.2s;
+    margin-right: 50px;
 }
 a {
     text-decoration: none;
 }
-/* 
-.y-link::after{
-    top: 25px;
-    left: 0px;
-    content: '';
-    position: absolute;
-    width: 0px;
-    height: 2px;
-    transition: 0.5s;
-    background-color: #F38181;
-}
-.y-link:hover {
-    color: #F38181;
-    transition: 0.5s;
-}
-.y-link::after{
-    background-color: #95e1d300;
-}
-
-.y-link:nth-child(1):hover::after {
-    background-color: #F38181;
-    width: 55px;
-}
-
-.y-link:nth-child(2):hover::after {
-    background-color: #F38181;
-    width: 55px;
-}
-
-.y-link:nth-child(3):hover::after {
-    background-color: #F38181;
-    width: 48px;
-}
-
-.y-link:nth-child(4):hover::after {
-    background-color: #F38181;
-    width: 44px;
-}
-
-.y-link:nth-child(5):hover::after {
-    background-color: #F38181;
-    width: 75px;
-}
-
-
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .y-gradient {
-    background: linear-gradient(to bottom, #000000, #00000000); 
-    max-width: 1500px;
-    height: 50px;
-} */
-
-/* .y-body__logo {
-    position: relative;
-    width: 200px;
-    left: 130px;
-    bottom: -300px;
-} */
-
 
 .y-main {
     margin: 0 auto;
@@ -176,7 +107,6 @@ a {
 
 .slider {
     width: 100%;
-    height: 600px;
     display: flex;
     transition: 0.5s;
 }
@@ -198,7 +128,7 @@ a {
     position: relative;
 /*     top: -185px;
     width: 100%; */
-    margin-top: -10px;
+    margin-top: 10px;
 }
 .slider-menu__nav {
     display: flex;
@@ -230,8 +160,8 @@ a {
     font-family: "Tiny5", sans-serif;
     border-radius: 10px;
     margin-top: 60px;
-    width: 1200px;
-    height: 550px;
+    max-width: 1200px;
+
     /* border: 1px solid #633535; */
     background-color: rgb(0, 0, 0);
 }
@@ -301,16 +231,23 @@ a {
     font-family: "Tiny5", sans-serif;
     color: #ffffff;
     /* border: 1px solid #c30d0d; */
-    margin-top: 80px;
-    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 100px;
     padding: 5px;
 }
 
 .y-download__image {
+    z-index: 1;
     margin-left: 4px;
     padding: 10px;
-    border: 4px solid #ffa968;
-    width: 700px;
+    /* border: 4px solid #ffa968; */
+    width: 650px;
+}
+.y-download__image:nth-child(2) {
+    z-index: 0;
+    position: absolute;
+    filter: blur(20px);
+    width: 650px;
 }
 .y-download__box {
     display: flex;
@@ -318,7 +255,7 @@ a {
     justify-content: space-between;
     /* border: 1px solid #1225d6; */
     padding: 10px;
-    margin-left: 10px;
+    margin-left: 60px;
 }
 .y-download__logo {
     background-image: url(/img/celesteLogo2.png);
@@ -353,51 +290,22 @@ a {
 }
 
 
-
-
-.y-main__buy {
-    width: 700px;
-    height: 100px;
-    margin-left: 50px;
-    border: 5px solid #ffa968;
-    font-family: "Tiny5", sans-serif;
-    color: #ffffff;
-}
-.y-buy__box {
-    padding: 20px;
-}
-.y-buy__text {
-    font-size: 40px;
-}
-.y-buy__button {
-    background-color: #363636;
-    font-size: 30px;
-    text-align: center;
-    padding: 20px;
-    left: 500px;
-    width: 200px;
-    border: 4px solid #6eb1fe;
-    position: relative;
-}
-.y-buy__button:hover {
-    cursor: pointer;
-    background-color: #4d4d4d;
-}
-
 .y-main__about {
+    
     margin: auto;
-    width: 800px;
+    max-width: 800px;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 0px;
     color: #ffffff;
     font-family: "Tiny5", sans-serif;
     padding-bottom: 100px;
+    padding-top: 100px;
 }
 
 .y-about__about {
     font-size: 50px;
     padding-bottom: 20px;
-    border-bottom: 4px solid #6eb1fe;
+    border-bottom: 5px solid #ffa968;
 }
 .y-about__start {
     color: #b6b6b6;
@@ -407,6 +315,16 @@ a {
     padding-bottom: 20px;
     padding-left: 20px;
 }
+.y-about__end {
+    color: #b6b6b6;
+    text-align: start;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    border-bottom: 5px solid #ffa968;
+}
+
 .y-about__middle {
     color: #b6b6b6;
     text-align: start;
@@ -423,3 +341,370 @@ a {
     background-position: 900px 200px;
     background-size: 900px;
 }
+
+
+
+
+.y-main__news {
+    /* border: 1px solid #a21010; */
+    margin: auto;
+    font-family: "Tiny5", sans-serif;
+    color: #ffffff;
+}
+.y-news__hh {
+    text-align: center;
+    font-size: 70px;
+}
+.y-news__pp {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #ffa968;
+}
+.y-news-box {
+    flex-wrap: wrap;
+    display: flex;
+}
+.y-news {
+    background-image: url(https://3.bp.blogspot.com/-OP-uhfGYg8g/XAgUcqHT3zI/AAAAAAAAFEU/XKedKcvHtUcQ6KHV3cTeA3vG_Lt0_P94ACLcBGAs/w1200-h630-p-k-no-nu/celeste.jpg);
+    background-size: 500px;
+
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+
+    width: 250px;
+    height: 255px;
+    border-bottom: 5px solid #1b1b1b;
+    margin-right: 50px;
+    margin-bottom: 70px;
+}
+.y-news:hover{
+    transition: 0.2s;
+    background-size: 520px;
+}
+.y-news:nth-child(2) {
+    background-position-x: -100px;
+    background-image: url(https://cdn1.epicgames.com/b671fbc7be424e888c9346a9a6d3d9db/offer/Celeste%20-%20landscape%20offer%20image-2560x1440-0b9b94fd493d817704ecfdf4c704989a.jpg);
+}
+.y-news:nth-child(3) {
+    background-position-x: 0px;
+    background-position-y: -30px;
+    background-image: url(https://wallpapercave.com/wp/wp4162304.jpg);
+}
+.y-news:nth-child(4) {
+    background-position-x: -100px;
+    background-position-y: 300px;
+    background-image: url(https://i.pinimg.com/originals/91/fb/54/91fb54881f5e059bc1e7bd1c41a5aeb9.png);
+}
+.y-news:nth-child(5) {
+    background-position-x: -50px;
+    background-image: url(https://wallpapercave.com/wp/wp4162278.jpg);
+}
+.y-news:nth-child(6) {
+    background-position-x: -100px;
+    background-image: url(https://images.gamebanana.com/img/ss/mods/62ef81482c6f4.jpg);
+}
+.y-news:nth-child(7) {
+    background-position-x: -100px;
+    background-image: url(https://3.bp.blogspot.com/-OP-uhfGYg8g/XAgUcqHT3zI/AAAAAAAAFEU/XKedKcvHtUcQ6KHV3cTeA3vG_Lt0_P94ACLcBGAs/w1200-h630-p-k-no-nu/celeste.jpg);
+}
+.y-news:nth-child(8) {
+    background-position-x: -100px;
+    background-position-y: 450px;
+    background-image: url(https://preview.redd.it/strawberry-jam-collab-the-biggest-celeste-mod-ever-has-now-v0-beot5v4gfsia1.png?width=640&crop=smart&auto=webp&s=52991ad8bda6d47940190123b5d227c19126f6ab);
+}
+.y-news__inside {
+    display: flex;
+    flex-direction: column;
+    height: 110px;
+    padding: 20px;
+    background-color: #000000bb;
+}
+.y-typeOfNews {
+    align-self: flex-start;
+    position: relative;
+    color: #000000;
+    padding: 5px;
+    background-color: #ffffff;
+}
+.y-textOfNews {
+    margin-top: 5px;
+    font-size: 19px;
+}
+
+
+
+
+.y-main__buy-block {
+    /* border: 1px solid #4022d6; */
+    font-family: "Tiny5", sans-serif;
+    color: #ffffff;
+}
+.y-main__buy {
+    /* border: 1px solid #943b3b; */
+    margin: auto;
+    display: flex;
+}
+.y-buy__button {
+    font-size: 20px;
+    border-top: 8px solid #ffbe90;
+    border-bottom: 8px solid #a56e4a;
+    background-color: #ffa968;
+    margin-right: 25px;
+    padding: 20px;
+}
+.y-buy__line {
+    border-left: 5px solid #6d6d6d;
+    margin-right: 25px;
+}
+.y-buy__button:hover {
+    cursor: pointer;
+   /*  background-color: #e69966; */
+    filter: brightness(0.9);
+}
+.y-demo__button {
+    font-size: 20px;
+    border-top: 8px solid #9dc4f1;
+    border-bottom: 8px solid #578ac5;
+    background-color: #6eb1fe;
+
+    padding: 20px;
+}
+a {
+    color: #ffffff;
+}
+
+.y-demo__button:hover {
+    cursor: pointer;
+   /*  background-color: #e69966; */
+    filter: brightness(0.9);
+}
+
+@media (max-width: 1199px) {
+    .y-main__box {
+        width: 300px;
+        height: 380px;
+    }
+
+
+
+
+    .y-main__download {
+        display: flex;
+        flex-direction: column;
+        font-family: "Tiny5", sans-serif;
+        align-items: center;
+        color: #ffffff;
+        /* border: 1px solid #c30d0d; */
+        margin-top: 0px;
+        margin-bottom: 100px;
+        padding: 5px;
+    }
+    .y-download__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* border: 1px solid #1225d6; */
+        max-width: 500px;
+        height: 330px;
+        padding: 10px;
+        margin-left: 60px;
+    }
+    .y-download__image {
+        z-index: 1;
+        margin-left: 4px;
+        padding: 10px;
+        /* border: 4px solid #ffa968; */
+        width: 650px;
+        margin-bottom: 30px;
+    }
+    .y-download__image:nth-child(2) {
+        z-index: 0;
+        position: absolute;
+        filter: blur(20px);
+        width: 650px;
+    }
+}
+@media (max-width: 991px) {
+    .slider-menu__nav {
+        max-width: 450px;
+    }
+
+
+
+
+    .y-main__box {
+        width: 250px;
+        height: 320px;
+    }
+
+
+
+    .y-main__about {
+        max-width: 700px;
+    }
+    .y-about__about {
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+    .y-about__start {
+        font-size: 17px;
+    }
+    .y-about__middle {
+        font-size: 17px;
+    }
+    .y-about__end {
+        font-size: 17px;
+    }
+    
+}
+@media (max-width: 767px) {
+    .y-link:nth-child(4) {
+        display: none;
+    }
+    .y-link:nth-child(5) {
+        display: none;
+    }
+
+
+
+
+    .slider-menu__nav {
+        max-width: 400px;
+    }
+    .slider-menu__nav-link {
+        font-size: 17px;
+    }
+
+
+
+    .y-main__box {
+        width: 200px;
+        height: 250px;
+    }
+    .y-about__text {
+        font-size: 13px;
+        text-align: center;
+        color: #6d6d6d;
+        line-height: 25px;
+    }
+    .y-main__text {
+        font-size: 16px;
+    }
+    .y-box__stiker {
+        width: 90px;
+        height: 90px;
+    }
+/*     .y-main__boxs {
+        align-items: center;
+        flex-direction: column;
+    } */
+
+
+    .y-main__about {
+        max-width: 570px;
+    }
+    .y-about__about {
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    .y-about__start {
+        font-size: 15px;
+    }
+    .y-about__middle {
+        font-size: 15px;
+    }
+    .y-about__end {
+        font-size: 15px;
+    }
+    
+
+
+    .y-download__image {
+        width: 500px;
+    }
+    .y-download__image:nth-child(2) {
+        width: 500px;
+    }
+}
+
+
+
+@media (max-width: 575px) {
+    .y-link {
+        font-size: 15px;
+        margin-right: 20px;
+    }
+
+
+
+    
+    .slider-menu__nav {
+        max-width: 340px;
+    }
+    .slider-menu__nav-link {
+        font-size: 15px;
+    }
+
+
+    .y-main__box {
+        width: 200px;
+        height: 250px;
+    }
+    .y-main__box:nth-child(3) {
+        display: none;
+    }
+    .y-main__box:nth-child(2) {
+        margin-left: 25px;
+    }
+    .y-main__box:nth-child(1) {
+        margin-right: 25px;
+    }
+    .y-main__boxs {
+        display: flex;
+        justify-content: center;
+    } 
+
+
+    .y-main__about {
+        max-width: 450px;
+    }
+    .y-about__about {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    .y-about__start {
+        font-size: 12px;
+    }
+    .y-about__middle {
+        font-size: 12px;
+    }
+    .y-about__end {
+        font-size: 12px;
+    }
+
+
+
+    .y-download__image {
+        width: 400px;
+    }
+    .y-download__image:nth-child(2) {
+        width: 400px;
+    }
+    .y-category, .y-dev, .y-rate {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+

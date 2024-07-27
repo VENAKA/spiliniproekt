@@ -10,20 +10,41 @@ let currentIndex = 0;
 
 let markers = document.querySelectorAll('.slider-menu__nav-link');
 
+
+
 let colors = ["#ffa968", "#642d68", "#d30308", "#00afc7"];
 
-let colors2 = ["#6eb1fe", "#b96690", "#000000", "#00ffff"];
+let colorsBottom = ["#a56e4a", "#441e46", "#930709", "#038091"]
+
+let colorsTop = ["#ffbe90", "#914297", "#d44a4c", "#07e2ff"]
+
+
+
+let colors2 = ["#6eb1fe", "#b96690", "#000000", "#13e0e0"];
+
+let colorsBottom2 = ["#578ac5", "#804964", "#930709", "#00c6c6"]
+
+let colorsTop2 = ["#9dc4f1", "#b57d99", "#d44a4c", "#beffff"]
+
+
 
 let yColor1 = document.querySelectorAll('.y-color1');
 
 let yColor2 = document.querySelectorAll('.y-color2');
+
+let yBcolor = document.querySelectorAll('.y-Bcolor')
+
+let yBcolor2 = document.querySelectorAll('.y-Bcolor2')
+
+let buyButton = document.querySelectorAll('.y-buy__button')
+
+let demoButton = document.querySelectorAll('.y-demo__button')
 
 let sliderMenu = document.querySelectorAll('.slider-menu__nav');
 
 let boxBD = document.querySelectorAll('.y-main__box')
 
 let boxDW = document.querySelectorAll('.y-download__image')
-
 
 
 yColor1.forEach(element => {
@@ -119,6 +140,43 @@ function colorChangeBorder3() {
     });
 }
 
+function colorChangeBorderMain() {
+    yBcolor.forEach(element => {
+        element.style.borderColor = colors[currentIndex];
+    });
+    
+}
+function colorChangeBorderMain2() {
+    yBcolor2.forEach(element => {
+        element.style.borderColor = colors2[currentIndex];
+    });
+}
+
+function buyButtonColor1() {
+    buyButton.forEach(element => {
+        element.style.backgroundColor = colors[currentIndex]
+        element.style.borderTop = `8px solid ${colorsTop[currentIndex]}`
+        element.style.borderBottom = `8px solid ${colorsBottom[currentIndex]}`
+
+    });
+}
+function buyButtonColor2() {
+    demoButton.forEach(element => {
+        element.style.backgroundColor = colors2[currentIndex]
+        element.style.borderTop = `8px solid ${colorsTop2[currentIndex]}`
+        element.style.borderBottom = `8px solid ${colorsBottom2[currentIndex]}`
+
+    });
+}
+
+function buttonChange() {
+    demoButton.forEach(element => {
+        if (currentIndex === 2) {
+            element.style.backgroundColor = "#d30308"
+        }
+    })
+}
+
 function colorShadow() {
     if (currentIndex === 2) {
         yColor2.forEach(element => {
@@ -140,6 +198,11 @@ function mainChange() {
     colorChangeBorder()
     colorChangeBorder2()
     colorChangeBorder3()
+    colorChangeBorderMain()
+    colorChangeBorderMain2()
+    buyButtonColor1()
+    buyButtonColor2()
+    buttonChange()
 }
 
 function showTheSlide(index) {

@@ -18,7 +18,7 @@
   </head>
   <body>
     <header class="v-header">
-      <div class="v-header__burger"></div>
+      <button class="v-header__burger"></button>
       <div class="v-header__burger-modal">
         <ul class="v-header__burger-modal__ul">
           <li class="v-header__burger-modal__ul-li"><a href="../index.html">home</a></li>
@@ -45,7 +45,7 @@
           <a href="../PRJ ALL 22.06.24/greg.html" class="v-header__ul-li_a">Horizon</a>
         </li>
       </ul>
-      <input type="text" class="v-header__input" />
+      <input type="text" class="v-header__input"  oninput="searchText()"/>
     </header>
     <div class="v-header__body">
       <div class="v-card">
@@ -66,7 +66,7 @@
       </div>
     </div>
     <main class="v-main">
-      <div class="v-main__gameplay">
+      <div class="v-main__gameplay" id="game">
         <h2 class="v-gameplay__title">GAMEPLAY</h2>
         <div class="v-gameplay__con">
           <div class="v-Tenno-Warframes">
@@ -272,7 +272,7 @@
         </div>
       </div>
 
-      <div class="v-main__Factions">
+      <div class="v-main__Factions" id="fact">
         <h2 class="v-main__Factions-h">Factions</h2>
         <div class="slider">
           <div class="slides">
@@ -327,7 +327,7 @@
         </div>
       </div>
       <h2 class="donations">DONATIONS</h2>
-      <div class="main__cards">
+      <div class="main__cards" id="donat">
         <a class="card" href="https://www.warframe.com/uk/buyplatinum">
           <h2 class="card__h">Buy Platinym</h2>
           <div class="card__main">
